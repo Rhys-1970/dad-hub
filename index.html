@@ -241,7 +241,7 @@ const PHOTO_DATA = {"Dad.jpg": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABA
 const APPOINTMENTS = [
   {date:"4 Jun 2026", who:"Forte Orthopaedics", reason:"Orthopaedic review", outcome:"Letter filed in 01_Medical"},
   {date:"8 Jun 2026", who:"Sports Doctor", reason:"Review", outcome:"Letter (2 pages) filed in 01_Medical"},
-  {date:"—", who:"GP (add clinic & name)", reason:"Next general check-up", outcome:"Book & add here"},
+  {date:"Wed 15 Jul 2026 · 1:30pm", who:"Rakaia Medical Centre (GP)", reason:"Sign WINZ forms · ACC claim · medical-file access & review approval", outcome:"Upcoming — booked 13 Jul"},
 ];
 const MEDS = [
   {item:"(add from Health Summary)", dose:"—", when:"—", notes:"Full list in 01_Medical / David_Jones_Health_Summary.docx"},
@@ -296,5 +296,4 @@ document.getElementById("med-body").innerHTML = MEDS.map(m=>
   `<tr><td><b>${m.item}</b></td><td>${m.dose}</td><td>${m.when}</td><td>${m.notes}</td></tr>`).join("");
 document.getElementById("contact-cards").innerHTML = CONTACTS.map(c=>
   `<div class="card contact"><div class="av" style="background:${c.col}">${c.init}</div>
-   <div><h3>${c.name}</h3><p>${c.role}</p></div></div>`).join("");
-</script>
+   <div>
